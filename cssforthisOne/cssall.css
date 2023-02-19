@@ -1,0 +1,17 @@
+@font-face {
+    font-family: fontOne;
+    src: url(/font/depixelbreitfett.woff);
+}
+
+div{
+    text-align: center;
+}
+
+h2{
+    font-family: fontOne;
+    font-size: 20px;
+}
+
+h1{
+    font-family: fontOne;
+}

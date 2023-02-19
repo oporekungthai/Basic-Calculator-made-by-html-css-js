@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cssforthisOne/cssall.css">
+</head>
+
+<body style="background-color: black;">
+    <script src="/js/bootstrap.min.js">
+        
+    </script>
+    <script>
+        
+        let a = 0;
+        let b = 0;
+        let summ = 0;
+        function clicked1() {
+            a = a+1
+            document.getElementById('1').innerHTML = a;
+        }
+        function clicked2() {
+            b = b+1
+            document.getElementById('2').innerHTML = b;
+        }
+        function clicked3() {
+            a = a-1
+            document.getElementById('1').innerHTML = a;
+        }
+        function clicked4() {
+            b = b-1
+            document.getElementById('2').innerHTML = b;
+        }
+        function findsum(){
+            summ = a-b;
+            document.getElementById('3').innerHTML = summ;
+            
+        }
+        function findMinus(){
+            summ = a-b;
+            document.getElementById('3').innerHTML = summ;
+            
+        }
+        function findDivide(){
+            if(b == 0){
+                document.getElementById('3').innerHTML = "There's no answer";
+            }else{
+                summ = a/b
+                document.getElementById('3').innerHTML = summ;
+            }
+            
+            
+        }
+        function findMulti(){
+            summ = a*b;
+            document.getElementById('3').innerHTML = summ;
+        }
+        function findPow(){
+            summ = a**b;
+            document.getElementById('3').innerHTML = summ;
+        }
+        function reset(){
+            a = 0
+            b = 0
+            summ = 0
+            document.getElementById('1').innerHTML = a;
+            document.getElementById('2').innerHTML = b;
+            document.getElementById('3').innerHTML = summ;
+        }
+    </script>
+    <div class="alltext">
+    <h2 style="color: white;">
+        It's a basically a calculator hahaha
+    </h2>
+    <button type="button" onclick="clicked1()">
+        CLick to increase the first one
+    </button>
+    <button type="button" onclick="clicked3()">
+        CLick to Decrease the first one
+    </button>
+    
+    <br>
+    <br>
+    <button type="button" onclick="clicked2()">
+        CLick to increase the Second one
+    </button>
+    
+    <button type="button" onclick="clicked4()">
+        CLick to Decrease the second one
+    </button>
+    <br>
+    <br>
+    <button type="button" onclick="findsum()">
+        CLick to find the sum of both number
+    </button>
+    <button type="button" onclick="findMinus()">
+        CLick to minus the first number with second the number
+    </button>
+    <br>
+    <br>
+    <button type="button" onclick="findDivide()">
+        CLick to Divide the first number with second the number
+    </button>
+    <button type="button" onclick="reset()" style="color: red">
+        CLick to reset all the numbers
+    </button>
+    <h1 id="1" style="color: white;">0</h1>
+    <h1 id="2" style="color: white;">0</h1>
+    <hr>
+    <h2 style="color: white;">
+        the answer is = 
+    </h2>
+    <h1 id="3" style="color: white;">0</h1>
+</div>
+</body>
+
+</html>
